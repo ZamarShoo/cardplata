@@ -62,10 +62,10 @@ body {
 
 @font-face {
     font-family: 'Montserrat Black';
-    src: url('Montserrat-Black.eot');
-    src: url('Montserrat-Black.eot?#iefix') format('embedded-opentype'),
-    url('Montserrat-Black.woff') format('woff'),
-    url('Montserrat-Black.ttf') format('truetype');
+    src: url('./fonts/Montserrat-Black.eot');
+    src: url('./fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Montserrat-Black.woff') format('woff'),
+    url('./fonts/Montserrat-Black.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,6 +80,7 @@ body {
 }
 
 $blue: #2948D7;
+$lightblue: #438CD0;
 $green: #4DD37D;
 $greenHover: #48EF84;
 $greenActive: #2BC662;
@@ -87,6 +88,7 @@ $gray: #757891;
 $titleColor: #111328;
 $textColor: #282A3E;
 $alert: #C45858;
+$bg: #F7F8FD;
 
 .flex {
     display: -webkit-box;
@@ -297,7 +299,7 @@ nav {
 
 .advantages--first-slide {
     margin-top: -2%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 .advantages-elem {
@@ -344,6 +346,93 @@ nav {
 
 
 
+
+
+//---------------------------------card slide
+
+.card-slide--wrapper {
+    background-color: $bg;
+    padding: 110px 0;
+}
+
+.card-slide--top h3 {
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.card-slide--dawn {
+    margin-top: 46px;
+}
+
+.card-slide--elem {
+    height: 329px;
+    width: 32%;
+    padding: 30px 56px;
+    overflow: hidden;
+    position: relative;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+
+    img {
+        width: 100%;
+        margin: 16px 0 30px;
+    }
+
+    a.btn {
+        font-size: 1.4rem;
+        padding: 1.2em 2em;
+    }
+}
+
+.card-elem {
+    z-index: 1;
+}
+
+.card-elem--hover {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    padding: 22px 56px;
+
+    @include transitionConst;
+
+    li {
+        position: relative;
+        margin-top: 22px;
+        margin-left: 20px;
+    }
+
+    li::before {
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: -25px;
+        width: 11px;
+        border: 2px solid #1CE564;
+        border-radius: 15px;
+    }
+}
+
+.card-info {
+    font-family: 'Montserrat Medium';
+    font-size: 1.2rem;
+    text-decoration: underline;
+
+    color: $lightblue;
+}
+
+.card-info:hover + .card-elem--hover,
+.card-info:focus + .card-elem--hover,
+.card-elem--hover:hover,
+.card-elem--hover:focus {
+    top: 0%;
+}
+//---------------------------------card slide mobile
 
 
 
