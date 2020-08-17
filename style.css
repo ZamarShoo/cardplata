@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -89,6 +90,7 @@ body {
 h1 {
   font-family: 'Montserrat Bold';
   font-size: 4.8rem;
+  line-height: 8.5rem;
   color: #2948D7;
 }
 
@@ -116,17 +118,20 @@ p {
   color: #282A3E;
 }
 
+p.medium {
+  font-size: 1.4rem;
+}
+
 p.small {
   font-size: 1.2rem;
 }
 
-p.alert {
-  color: #C45858;
+p.big {
+  font-size: 2.4rem;
 }
 
-a.semibold {
-  font-family: 'Montserrat Semibold';
-  font-size: 1.6rem;
+p.alert {
+  color: #C45858;
 }
 
 a {
@@ -135,6 +140,40 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #757891;
+}
+
+a.semibold {
+  font-family: 'Montserrat Semibold';
+  font-size: 1.6rem;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Montserrat Bold';
+  font-size: 1.6rem;
+  border-radius: 5px;
+  padding: 1em 2em;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background-color: #4DD37D;
+  color: #FFFFFF;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  background-color: #48EF84;
+  box-shadow: 10px 10px rgba(13, 23, 29, 0.1);
+}
+
+.btn:active {
+  background-color: #2BC662;
+}
+
+.btn--big-height {
+  margin-top: 43px;
 }
 
 ul {
@@ -165,4 +204,71 @@ nav {
 
 .number {
   width: 199px;
+}
+
+.first-slide {
+  position: relative;
+  margin: 20% 0 0 13%;
+}
+
+.first-slide-content {
+  position: relative;
+  z-index: 2;
+}
+
+.first-slide--clouds {
+  position: absolute;
+  top: -35%;
+  left: -30%;
+  z-index: 1;
+}
+
+.first-slide--bg {
+  margin-top: -10%;
+  width: 100%;
+}
+
+.advantages--first-slide {
+  margin-top: -2%;
+  margin-bottom: 20%;
+}
+
+.advantages-elem {
+  position: relative;
+  padding: 12px 17px;
+  width: 18%;
+  height: 152px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(24, 33, 43, 0.12);
+  border-radius: 15px;
+}
+
+.advantages-elem:hover,
+.advantages-elem:focus {
+  margin-top: -10px;
+}
+
+.advantages-elem--p {
+  margin-top: 12px;
+}
+
+.advantages-only {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.advantages-only p {
+  display: inline-block;
+  background-color: #5F76E3;
+  border-radius: 5px 0 0 5px;
+  padding: .6em .8em;
+  font-family: 'Montserrat Semibold';
+  font-size: 1.2rem;
+  color: #FFFFFF;
 }
