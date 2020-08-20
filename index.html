@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <section>
-            <div class="header flex flex-hor flex-center">
-                <div class="header-l flex flex-center">
+            <div class="nav flex flex-hor flex-center">
+                <div class="nav-l flex flex-center">
                     <a>
                         <img src="./img/logo.svg" alt="">
                     </a>
-                    <p class="header-l--p small">
+                    <p class="nav-l--p small">
                         Официальный контракт с <br>
                         <img src="./img/underground.svg" alt="">
                         ГУП «Петербургский метрополитен»
                     </p>
                 </div>
-                <div class="header-r flex flex-hor flex-center">
+                <div class="nav-r flex flex-hor flex-center">
                     <nav class="flex flex-hor flex-center">
                             <a href="">Виды карт</a>
                             <a href="">Активация карты</a>
                             <a href="">Вопросы/ответы</a>
                     </nav>
-                    <div class="number flex flex-hor flex-center">
-                        <a class="semibold" href="tel:8 800 000 00 00">8 800 000 00 00</a>
-                        <img src="./img/number.svg" alt="">
+                    <div class="number">
+                        <a class="semibold flex flex-hor flex-center" href="tel:8 800 000 00 00">
+                            8 800 000 00 00
+                            <div class="number-img">
+                                <img src="./img/number.svg" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -52,8 +58,8 @@
                 </div>
             </section>
             <img class="first-slide--bg" src="./img/first-slide.svg" alt="">
-            <section>
-                <div class="advantages advantages--first-slide flex flex-hor">
+            <section class="owl-wrapper-off">
+                <div class="advantages advantages--first-slide flex flex-hor owl-carousel owl-theme">
                     <div class="advantages-elem">
                         <div class="advantages-top">
                             <img src="./img/bus.svg" alt="">
@@ -194,9 +200,646 @@
                 </div>
             </section>
         </div>
+
+        <div class="step-wrapper">
+            <section>
+                <div class="step">
+                    <div class="step--top flex flex-hor">
+                        <h2>
+                            4 шага, и все готово
+                        </h2>
+                        <h3 class="big">
+                            Этапы пополнения
+                        </h3>
+                    </div>
+                    <div class="step--clouds">
+                        <img src="./img/clouds.svg" alt="">
+                    </div>
+                </div>
+                <div class="step--dawn flex flex-hor">
+                    <div class="step-elem flex flex-ver">
+                        <div class="step-elem--img">
+                            <img src="./img/step1.svg" alt="">
+                        </div>
+                        <div class="step-elem-content">
+                            <h3>Укажите номер карты</h3>
+                            <p class="small">На экране увидите текущий баланс и доступные варианты билетов.</p>
+                        </div>
+                        <a href="" class="btn">Попробовать</a>
+                    </div>
+                    <div class="step-elem flex flex-ver">
+                        <div class="step-elem--img">
+                            <img src="./img/step2.svg" alt="">
+                        </div>
+                        <div class="step-elem-content">
+                            <h3>Выберите тип проездного билета</h3>
+                            <p class="small">Также укажите сумму или количество поездок, выберите способ оплаты, укажите email или номер телефона для получения чека.</p>
+                        </div>
+                    </div>
+                    <div class="step-elem flex flex-ver">
+                        <div class="step-elem--img">
+                            <img src="./img/step3.svg" alt="">
+                        </div>
+                        <div class="step-elem-content">
+                            <h3>Оплатите</h3>
+                            <p class="small">Вы перейдете на сайт платежной системы, а после операции вернетесь на нашу страницу, где получите чек и увидите дальнейшую инструкцию.</p>
+                        </div>
+                    </div>
+                    <div class="step-elem flex flex-ver">
+                        <div class="step-elem--img">
+                            <img src="./img/step4.svg" alt="">
+                        </div>
+                        <div class="step-elem-content">
+                            <h3>Активируйте карту</h3>
+                            <p class="small">В автобусе или другом удобном месте и наслаждайтесь поездкой.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="activation-wrapper">
+            <section>
+                <div class="activation">
+                    <div class="step--top flex flex-hor">
+                        <div class="activation-top--left">
+                            <h2>
+                                Более 12 000 мест в СПб, где можно активировать карту
+                            </h2>
+                            <h3 class="big">
+                                Места активации
+                            </h3>
+                        </div>
+                        <div class="activation-top--right">
+                            <p>Активируйте карту, где и когда вам удобно. Достаточно приложить проездной к любому устройству активации.</p>
+                            <p>Карта ПБМ активируется при проходе через турникет.</p>
+                            <p class="small alert">
+                                * Обратите внимание, что некоторые виды активации доступны только для карт «Подорожник».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section class="owl-wrapper-off">
+                    <div class="activation--dawn flex flex-hor owl-carousel owl-theme">
+                        <div class="activation-elem">
+                            <div class="activation-elem--img flex flex-ver">
+                                <img src="./img/activation1.svg" alt="">
+                            </div>
+                            <div class="activation-elem--content">
+                                <h3>Метрополитен</h3>
+                                <p class="small">В автоматах по продаже проездных билетов (АППБ), устройствах для визуализации и активации, а также в кассах.</p>
+                            </div>
+                        </div>
+                        <div class="activation-elem">
+                            <div class="activation-elem--img flex">
+                                <img src="./img/activation2.svg" alt="">
+                            </div>
+                            <div class="activation-elem--content">
+                                <h3>Офисы «Сбербанка»</h3>
+                                <p class="small">В устройствах для визуализации и активации.</p>
+                            </div>
+                        </div>
+                        <div class="activation-elem">
+                            <div class="activation-elem--img flex">
+                                <img src="./img/activation3.svg" alt="">
+                            </div>
+                            <div class="activation-elem--content">
+                                <h3>Наземный транспорт</h3>
+                                <p class="small">В терминалах оплаты проезда — только для карт «Подорожник».</p>
+                            </div>
+                        </div>
+                        <div class="activation-elem">
+                            <div class="activation-elem--img flex">
+                                <img src="./img/activation4.svg" alt="">
+                            </div>
+                            <div class="activation-elem--content">
+                                <h3>Киоски «Организатор перевозок»</h3>
+                                <p class="small">В кассах — только для карт «Подорожник».</p>
+                            </div>
+                        </div>
+                        <div class="activation-elem">
+                            <div class="activation-elem--img flex">
+                                <img src="./img/activation5.svg" alt="">
+                            </div>
+                            <div class="activation-elem--content">
+                                <h3>Магазины сети «Пятерочка»</h3>
+                                <p class="small">Воспользуйтесь активаторами — только для карт «Подорожник».</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <div class="info-wrapper">
+            <section>
+                <div class="info">
+                    <div class="info-elem">
+                        <div class="info-elem--content">
+                            <span>без комиссии и быстро</span>
+                            <h3>Бесплатное, моментальное, безопасное пополнение</h3>
+                            <p>С помощью нашего сервиса вы пополняете карты без комиссии: отправляете на карту 1000 рублей — на баланс приходит ровно 1000 рублей. Деньги зачисляются в срок от 30 секунд.</p>
+                            <div class="info-elem--img">
+                                <img src="./img/info1.svg" alt="">
+                            </div>
+                            <a href="" class="btn">Попробовать</a>
+                        </div>
+                    </div>
+                    <div class="info-elem info-elem--reverse">
+                        <div class="info-elem--content">
+                            <span>официально</span>
+                            <h3>Работаем официально по контракту с ГУП «Петербургский метрополитен»</h3>
+                            <p>Действуем от лица «Петербургского метрополитена» и поддерживаем карты, выпущенные Метрополитеном и Организатором перевозок. На сайте Метрополитена вы найдете ссылку на наш сервис онлайн оплаты проездных — это подтверждает наше официальное сотрудничество.</p>
+                            <div class="info-elem--img">
+                                <img src="./img/info2.svg" alt="">
+                            </div>
+                            <a href="" class="btn">Пополнить карту</a>
+                        </div>
+                    </div>
+                    <div class="info-elem">
+                        <div class="info-elem--content">
+                            <span>безопасно</span>
+                            <h3>Безопасность и комфорт пользователя на первом месте</h3>
+                            <p>Передача данных и оплаты проходят по защищенному каналу. Наши операции обезличенные — ваши персональные данные не запрашиваются и не идентифицируются, соответственно, они в полной безопасности.</p>
+                            <div class="info-elem--img">
+                                <img src="./img/info3.svg" alt="">
+                            </div>
+                            <a href="" class="btn">Пополнить баланс</a>
+                        </div>
+                    </div>
+                    <div class="info-elem info-elem--reverse">
+                        <div class="info-elem--content">
+                            <span>популярно</span>
+                            <h3>Скоро с нами будет весь город</h3>
+                            <p>Наш сервис используют уже более 10 000 человек. Они оценили удобство, простоту и высокую скорость зачисления денег. Мы обслуживаем все популярные типы билетов, избавляем вас от утомительных очередей и делаем поездки в общественном транспорте проще и комфортнее.</p>
+                            <div class="info-elem--img">
+                                <img src="./img/info4.svg" alt="">
+                            </div>
+                            <a href="" class="btn">Попробовать на практике</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="facts-wrapper">
+            <section>
+                <div class="facts">
+                    <h2>Факты для подключения в течение 3-х минут после прочтения</h2>
+                    <div class="facts-container flex flex-hor">
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>Удобный интерфейс</h3>
+                                <p class="medium">Пополнение карты доступно за 3 клика с мобильного телефона, планшета или компьютера.</p>
+                            </div>
+                        </div>
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>Экономия времени</h3>
+                                <p class="medium">Вы забудете об очередях на пополнение и активацию проездных билетов.</p>
+                            </div>
+                        </div>
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>3 варианта оплаты</h3>
+                                <p class="medium">С банковской карты, мобильного телефона или электронными деньгами.</p>
+                            </div>
+                        </div>
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>Полное информирование</h3>
+                                <p class="medium">Покажем текущий баланс карты, а также варианты пополнения.</p>
+                            </div>
+                        </div>
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>В любой момент</h3>
+                                <p class="medium">Пользуйтесь сервисом везде, где есть интернет.</p>
+                            </div>
+                        </div>
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>Оплата по номеру</h3>
+                                <p class="medium">Не нужно указывать тип карты — мы все сделаем за вас.</p>
+                            </div>
+                        </div>
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>Доступ ко всему общественному транспорту</h3>
+                                <p class="medium">Пользуйтесь метро, автобусами, троллейбусами, трамваями одинаково просто.</p>
+                            </div>
+                        </div>
+                        <div class="fact-elem flex flex-hor">
+                            <div class="fact-elem--img">
+                                <img src="./img/star.svg" alt="">
+                            </div>
+                            <div class="fact-elem--content">
+                                <h3>Поддержка 24/7</h3>
+                                <p class="medium">Круглосуточно решаем любые вопросы клиентов.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn">Попробовать</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="social-wrapper">
+            <section>
+                <div class="social flex flex-hor flex-center">
+                    <div class="social-left">
+                        <h2>Доступ на весь городской транспорт</h2>
+                        <p>Выбирайте билет, платите и отправляйтесь в путь.</p>
+                        <a href="" class="btn">Пополнить карту</a>
+                    </div>
+                    <div class="social-right">
+                        <h3>Пробуйте сами, удивляйте друзей</h3>
+                        <p>Поделитесь ссылкой на сервис в социальных сетях — пусть ваши знакомые тоже оценят удобству и простоту пополнения проездных карт.</p>
+                        <div class="social-media">
+                            <div class="ya-share2" data-bare data-services="twitter,facebook,vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="all-wrapper">
+            <section>
+                <div class="all">
+                    <h2>Подойдет для каждого, понравится всем</h2>
+                    <p>Наш сервис полезен всем пассажирам общественного транспорта в Санкт-Петербурге, но особенно его оценят те, кто: </p>
+                </div>
+            </section>
+            <section class="owl-wrapper-off">
+                <div class="all-section flex flex-hor owl-carousel owl-theme">
+                    <div class="advantages-elem">
+                        <div class="advantages-top">
+                            <img src="./img/hand.svg" alt="">
+                        </div>
+                        <p class="advantages-elem--p medium">
+                            Устал стоять в очередях к терминалам и хочет сэкономить время.
+                        </p>
+                    </div>
+                    <div class="advantages-elem">
+                        <div class="advantages-top">
+                            <img src="./img/port.svg" alt="">
+                        </div>
+                        <p class="advantages-elem--p medium">
+                            Хочет постоянно контролировать баланс карты.
+                        </p>
+                    </div>
+                    <div class="advantages-elem">
+                        <div class="advantages-top">
+                            <img src="./img/security.svg" alt="">
+                        </div>
+                        <p class="advantages-elem--p medium">
+                            Беспокоится о безопасности онлайн-платежей и личных данных.
+                        </p>
+                    </div>
+                    <div class="advantages-elem">
+                        <div class="advantages-top">
+                            <img src="./img/people.svg" alt="">
+                        </div>
+                        <p class="advantages-elem--p medium">
+                            Регулярно пополняет карты детей, родителей, пожилых родственников.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="faq-wrapper">
+            <section>
+                <div class="faq">
+                    <div class="faq-top flex flex-hor">
+                        <h2>
+                            Отвечаем на частые вопросы пользователей
+                        </h2>
+                        <h3 class="big">
+                            Вопросы/ответы
+                        </h3>
+                    </div>
+                    <div class="faq-dawn">
+                        <label>
+                            <input type="checkbox">
+                            <div>
+                                <div class="faq-title flex flex-hor flex-center">
+                                    <h3>Мне обязательно спускаться в метро, чтобы активировать карту?</h3>
+                                    <img src="./img/faq-close.svg" alt="">
+                                </div>
+                                <p class="faq-text">Нет, карту можно активировать в наземном транспорте, офисах «Сбербанка», магазинах сети «Пятерочка», киосках «Организатор перевозок» — выбирайте любой удобный способ.</p>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <div>
+                                <div class="faq-title flex flex-hor flex-center">
+                                    <h3>Сколько составляет комиссия платежа?</h3>
+                                    <img src="./img/faq-close.svg" alt="">
+                                </div>
+                                <p class="faq-text">Нет, карту можно активировать в наземном транспорте, офисах «Сбербанка», магазинах сети «Пятерочка», киосках «Организатор перевозок» — выбирайте любой удобный способ.</p>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <div>
+                                <div class="faq-title flex flex-hor flex-center">
+                                    <h3>Как быстро проходит пополнение?</h3>
+                                    <img src="./img/faq-close.svg" alt="">
+                                </div>
+                                <p class="faq-text">Нет, карту можно активировать в наземном транспорте, офисах «Сбербанка», магазинах сети «Пятерочка», киосках «Организатор перевозок» — выбирайте любой удобный способ.</p>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <div>
+                                <div class="faq-title flex flex-hor flex-center">
+                                    <h3>Пополнение работает только для метро?</h3>
+                                    <img src="./img/faq-close.svg" alt="">
+                                </div>
+                                <p class="faq-text">Нет, карту можно активировать в наземном транспорте, офисах «Сбербанка», магазинах сети «Пятерочка», киосках «Организатор перевозок» — выбирайте любой удобный способ.</p>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <div>
+                                <div class="faq-title flex flex-hor flex-center">
+                                    <h3>Что требуется для оплаты?</h3>
+                                    <img src="./img/faq-close.svg" alt="">
+                                </div>
+                                <p class="faq-text">Нет, карту можно активировать в наземном транспорте, офисах «Сбербанка», магазинах сети «Пятерочка», киосках «Организатор перевозок» — выбирайте любой удобный способ.</p>
+                            </div>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <div>
+                                <div class="faq-title flex flex-hor flex-center">
+                                    <h3>С сервисом может разобраться пожилой человек?</h3>
+                                    <img src="./img/faq-close.svg" alt="">
+                                </div>
+                                <p class="faq-text">Нет, карту можно активировать в наземном транспорте, офисах «Сбербанка», магазинах сети «Пятерочка», киосках «Организатор перевозок» — выбирайте любой удобный способ.</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="review-wrapper">
+            <section>
+                <div class="review">
+                    <div class="review-top flex flex-hor">
+                        <h2>
+                            Пользуюсь, нравится, советую 
+                        </h2>
+                        <h3 class="big">
+                            Отзывы
+                        </h3>
+                    </div>
+                    <div id="reviewNavContainer"></div>
+                    <div class="owl-carousel review-bottom owl-theme">
+
+                        <div class="review-elem">
+                            <img src="./img/tmp/review1.png" alt="">
+                            <div class="review-elem--content flex flex-center">
+                                <span>Отзыв оставил:</span>
+                                <p>Андрей Иванов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-elem">
+                            <img src="./img/tmp/review2.png" alt="">
+                            <div class="review-elem--content flex flex-center">
+                                <span>Отзыв оставил:</span>
+                                <p>Андрей Иванов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-elem">
+                            <img src="./img/tmp/review1.png" alt="">
+                            <div class="review-elem--content flex flex-center">
+                                <span>Отзыв оставил:</span>
+                                <p>Андрей Иванов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-elem">
+                            <img src="./img/tmp/review1.png" alt="">
+                            <div class="review-elem--content flex flex-center">
+                                <span>Отзыв оставил:</span>
+                                <p>Андрей Иванов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-elem">
+                            <img src="./img/tmp/review2.png" alt="">
+                            <div class="review-elem--content flex flex-center">
+                                <span>Отзыв оставил:</span>
+                                <p>Андрей Иванов</p>
+                            </div>
+                        </div>
+
+                        <div class="review-elem">
+                            <img src="./img/tmp/review1.png" alt="">
+                            <div class="review-elem--content flex flex-center">
+                                <span>Отзыв оставил:</span>
+                                <p>Андрей Иванов</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="poln-wrapper">
+            <section>
+                <div class="poln">
+                    <div class="poln--clouds">
+                        <img src="./img/clouds.svg" alt="">
+                    </div>
+                    <div class="info-elem">
+                        <div class="info-elem--content">
+                            <h3>Быстрое и удобное пополнение проездных карт без комиссии</h3>
+                            <p>Для всего городского общественного транспорта.</p>
+                            <div class="info-elem--img">
+                                <img src="./img/poln.svg" alt="">
+                            </div>
+                            <a href="" class="btn">Пополнить карту</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="news-wrapper">
+            <section>
+                <h2>Новостная лента</h2>
+                <div id="newsNavContainer"></div>
+                <div class="news owl-carousel owl-theme">
+
+                    <div class="news-elem">
+                        <div class="news-elem--top flex flex-hor flex-center">
+                            <span>06.08.2020</span>
+                            <span>16:37</span>
+                        </div>
+                        <div class="news-elem--content">
+                            <h3>В электродепо «Автово» продолжается реставрация исторических вагонов</h3>
+                            <p class="small">
+                                По окончании работ они отправятся в электродепо «Южное».
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-elem">
+                        <div class="news-elem--top flex flex-hor flex-center">
+                            <span>06.08.2020</span>
+                            <span>16:37</span>
+                        </div>
+                        <div class="news-elem--content">
+                            <h3>В электродепо «Автово» продолжается реставрация исторических вагонов</h3>
+                            <p class="small">
+                                По окончании работ они отправятся в электродепо «Южное».
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-elem">
+                        <div class="news-elem--top flex flex-hor flex-center">
+                            <span>06.08.2020</span>
+                            <span>16:37</span>
+                        </div>
+                        <div class="news-elem--content">
+                            <h3>В электродепо «Автово» продолжается реставрация исторических вагонов</h3>
+                            <p class="small">
+                                По окончании работ они отправятся в электродепо «Южное».
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-elem">
+                        <div class="news-elem--top flex flex-hor flex-center">
+                            <span>06.08.2020</span>
+                            <span>16:37</span>
+                        </div>
+                        <div class="news-elem--content">
+                            <h3>В электродепо «Автово» продолжается реставрация исторических вагонов</h3>
+                            <p class="small">
+                                По окончании работ они отправятся в электродепо «Южное».
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-elem">
+                        <div class="news-elem--top flex flex-hor flex-center">
+                            <span>06.08.2020</span>
+                            <span>16:37</span>
+                        </div>
+                        <div class="news-elem--content">
+                            <h3>В электродепо «Автово» продолжается реставрация исторических вагонов</h3>
+                            <p class="small">
+                                По окончании работ они отправятся в электродепо «Южное».
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-elem">
+                        <div class="news-elem--top flex flex-hor flex-center">
+                            <span>06.08.2020</span>
+                            <span>16:37</span>
+                        </div>
+                        <div class="news-elem--content">
+                            <h3>В электродепо «Автово» продолжается реставрация исторических вагонов</h3>
+                            <p class="small">
+                                По окончании работ они отправятся в электродепо «Южное».
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
     </main>
 
-
+    <footer>
+        <section>
+            <div class="nav flex flex-hor flex-center">
+                <div class="nav-l flex flex-center">
+                    <a>
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <p class="nav-l--p small">
+                        Официальный контракт с <br>
+                        <img src="./img/underground.svg" alt="">
+                        ГУП «Петербургский метрополитен»
+                    </p>
+                </div>
+                <div class="nav-r flex flex-hor flex-center">
+                    <nav class="flex flex-hor flex-center">
+                            <a href="">Виды карт</a>
+                            <a href="">Активация карты</a>
+                            <a href="">Вопросы/ответы</a>
+                    </nav>
+                    <div class="number">
+                        <a class="semibold flex flex-hor flex-center" href="tel:8 800 000 00 00">
+                            8 800 000 00 00
+                            <div class="number-img">
+                                <img src="./img/number.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-in flex flex-hor flex-center">
+                <a class="footer-elem">
+                    <img src="./img/googleplay.svg" alt="">
+                </a>
+                <a class="footer-elem">
+                    <img src="./img/appstore.svg" alt="">
+                </a>
+            </div>
+            
+        </section>
+        <div class="footer-img">
+            <img src="./img/footer.svg" alt="">
+        </div>
+        <div class="footer-dawn">
+            <section>
+                <p class="footer-dawn--content flex flex-center">2020 ООО “КартПлата”, ОГРН 00000000000000 Все права защищены</p>
+            </section>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
