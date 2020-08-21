@@ -24,6 +24,7 @@ body {
   src: url("./fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-Regular.woff") format("woff"), url("./fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +33,7 @@ body {
   src: url("./fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-Medium.woff") format("woff"), url("./fonts/Montserrat-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -40,6 +42,7 @@ body {
   src: url("./fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-SemiBold.woff") format("woff"), url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -48,6 +51,7 @@ body {
   src: url("./fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-ExtraBold.woff") format("woff"), url("./fonts/Montserrat-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -56,6 +60,7 @@ body {
   src: url("./fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-Black.woff") format("woff"), url("./fonts/Montserrat-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .flex {
@@ -92,6 +97,7 @@ h1 {
   font-family: 'Montserrat Bold';
   font-size: 4.8rem;
   line-height: 52px;
+  margin-bottom: 14px;
   color: #2948D7;
 }
 
@@ -130,6 +136,7 @@ p.small {
 
 p.big {
   font-size: 2.4rem;
+  line-height: 22px;
 }
 
 p.alert {
@@ -193,6 +200,81 @@ section {
   margin: 0 auto;
 }
 
+#sectionNavContainer,
+#activationNavContainer,
+#advantagesNavContainer {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+
+#sectionNavContainer .owl-prev span,
+#activationNavContainer .owl-prev span,
+#advantagesNavContainer .owl-prev span {
+  position: relative;
+  background-image: url(./img/pre-arrow-m.svg);
+  width: 18px;
+  height: 9px;
+  top: 0;
+  left: 0;
+}
+
+#sectionNavContainer .owl-next span,
+#activationNavContainer .owl-next span,
+#advantagesNavContainer .owl-next span {
+  position: relative;
+  background-image: url(./img/next-arrow-m.svg);
+  width: 18px;
+  height: 9px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#advantagesNavContainer .owl-next,
+#advantagesNavContainer .owl-prev {
+  background-color: white;
+}
+
+#newsDotsContainer,
+#reviewDotsContainer,
+#sectionDotsContainer,
+#activationDotsContainer,
+#advantagesDotsContainer {
+  width: 85px;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+#newsDotsContainer button,
+#reviewDotsContainer button,
+#sectionDotsContainer button,
+#activationDotsContainer button,
+#advantagesDotsContainer button {
+  outline: none;
+  border: none;
+  width: 5px;
+  height: 5px;
+  background: #DDDEE0;
+  border-radius: 99px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+#newsDotsContainer button.active,
+#reviewDotsContainer button.active,
+#sectionDotsContainer button.active,
+#activationDotsContainer button.active,
+#advantagesDotsContainer button.active {
+  background: #2948D7;
+  width: 15px;
+}
+
 header {
   position: absolute;
   top: 16px;
@@ -205,6 +287,11 @@ nav {
   z-index: 1;
   width: 400px;
   margin-right: 48px;
+}
+
+.nav {
+  position: relative;
+  z-index: 1;
 }
 
 .nav-l--p {
@@ -270,6 +357,10 @@ nav {
 .first-slide {
   position: relative;
   margin: 20% 0 0 13%;
+}
+
+.first-slide-wrapper {
+  height: 100%;
 }
 
 .first-slide-content {
@@ -812,7 +903,7 @@ input[type="checkbox"]:checked + div .faq-text {
   background-color: #F7F8FD;
   border: none;
   left: -100px;
-  top: 100px;
+  bottom: 150px;
   cursor: pointer;
   height: 50px;
 }
@@ -852,7 +943,7 @@ input[type="checkbox"]:checked + div .faq-text {
   background-color: #F7F8FD;
   border: none;
   right: -100px;
-  top: 100px;
+  bottom: 150px;
   cursor: pointer;
 }
 
@@ -937,7 +1028,7 @@ input[type="checkbox"]:checked + div .faq-text {
 
 #newsNavContainer .owl-prev,
 #newsNavContainer .owl-next {
-  top: 45px;
+  bottom: 45px;
 }
 
 .news-elem--top {
@@ -1011,7 +1102,7 @@ footer {
 
 .footer-dawn {
   width: 100%;
-  height: 46px;
+  min-height: 46px;
   padding: 15px 0;
   background: #F7F8FD;
   margin-top: -40px;
@@ -1037,8 +1128,16 @@ footer {
 
 @media screen and (max-width: 1220px) {
   .owl-prev,
+  .owl-next,
+  #newsNavContainer .owl-prev,
+  #newsNavContainer .owl-next {
+    bottom: -80px;
+  }
+  .owl-prev {
+    left: 0px;
+  }
   .owl-next {
-    display: none;
+    right: 0px;
   }
 }
 
@@ -1086,6 +1185,12 @@ footer {
   }
   .owl-item {
     padding: 30px 0;
+  }
+  .first-slide--bg {
+    width: 1350px;
+    margin-left: -675px;
+    left: 50%;
+    position: relative;
   }
 }
 
@@ -1159,6 +1264,9 @@ footer {
     width: 50%;
     margin-bottom: 22px;
   }
+  .first-slide {
+    margin: 40% 0 0 0%;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -1208,9 +1316,47 @@ footer {
   .ya-share2__item:nth-child(3) {
     margin-bottom: 30px;
   }
+  #newsNavContainer,
+  #reviewNavContainer {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .owl-prev,
+  .owl-next,
+  #newsNavContainer .owl-prev,
+  #newsNavContainer .owl-next {
+    position: relative;
+    bottom: 0;
+  }
+  .owl-prev::before,
+  .owl-next::before {
+    display: none;
+  }
+  .owl-prev span {
+    position: relative;
+    background-image: url(./img/pre-arrow-m.svg);
+    width: 18px;
+    height: 9px;
+    top: 0;
+    left: 0;
+  }
+  .owl-next span {
+    position: relative;
+    background-image: url(./img/next-arrow-m.svg);
+    width: 18px;
+    height: 9px;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .advantages--first-slide {
+    margin-top: -97px;
+  }
   .footer-img {
     width: 1320px;
     left: -658px;
@@ -1230,6 +1376,13 @@ footer {
   }
   .info-elem--img img {
     width: 100%;
+  }
+  .first-slide--bg {
+    width: 1350px;
+    margin-left: -675px;
+    left: 50%;
+    position: relative;
+    margin-top: -120px;
   }
 }
 

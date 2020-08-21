@@ -11,6 +11,10 @@ $(document).ready(function() {
                     center: true,
                     items: 1,
                     stagePadding: 60,
+                    dots: true,
+                    nav: true,
+                    navContainer: '#advantagesNavContainer',
+                    dotsContainer: '#advantagesDotsContainer'
                 },
                 500: {
                     items: 2,
@@ -33,6 +37,10 @@ $(document).ready(function() {
                     center: true,
                     items: 1,
                     stagePadding: 90,
+                    dots: true,
+                    nav: true,
+                    navContainer: '#activationNavContainer',
+                    dotsContainer: '#activationDotsContainer'
                 },
                 780: {
                     items: 2,
@@ -51,6 +59,10 @@ $(document).ready(function() {
                     center: true,
                     items: 1,
                     stagePadding: 60,
+                    dots: true,
+                    nav: true,
+                    navContainer: '#sectionNavContainer',
+                    dotsContainer: '#sectionDotsContainer',
                 },
                 500: {
                     items: 2,
@@ -79,12 +91,17 @@ $(".review-bottom").owlCarousel({
     dots: false,
     navContainer: '#reviewNavContainer',
     stagePadding: 0,
+    margin:30,
     responsive: {
         0: {
+            margin:30,
             center: true,
-            items: 1
+            items: 1,
+            dots: true,
+            dotsContainer: '#reviewDotsContainer'
         },
         740: {
+            margin:30,
             items: 2
         },
         1100: {
@@ -101,10 +118,12 @@ $(".news").owlCarousel({
     responsive: {
         0: {
             center: true,
-            items: 1
+            items: 1,
+            dots: true,
+            dotsContainer: '#newsDotsContainer'
         },
         740: {
-            items: 2
+            items: 2,
         },
         1100: {
             items: 3
